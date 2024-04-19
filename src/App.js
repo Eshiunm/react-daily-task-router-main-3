@@ -44,8 +44,8 @@ const LogoutBtn = () => {
 };
 
 const TodoList = ({ showLinks, setShowLinks }) => {
-  const location = useLocation();
-  //console.log(location.pathname);
+  // useLocation() 這個 Hook，可以使這個元件不論是透過「回上頁」or「a連結」，都能再重新渲染一次
+  useLocation();
   setShowLinks(true);
   return (
     <>
